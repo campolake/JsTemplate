@@ -1,0 +1,52 @@
+<html>
+<head>
+<script>
+
+(function($)
+{
+  Function.prototype.miniExtend = function(parent,override)
+	{
+		if (typeof parent == 'function')
+		{
+			return this;
+		}		
+		this.prototype = parent; //继承父类
+	};
+	
+	$.miui = {
+		version:'1.9.1',
+		say:function()
+		{
+			alert("bb");
+		},
+		btest:function(ver)
+		{
+			ver = ver || this.version;
+			console.log(ver);
+			return ver;
+		}
+	};
+	
+	
+})(window);
+
+var aa = { age:22};
+
+var bb = function()
+{
+	this.name = 'wangjw';
+}
+
+bb.miniExtend(aa,false);
+
+console.log(bb);
+
+var ccc = '1.99'
+var cc  = miui.btest(ccc);
+console.log(cc);
+
+
+
+</script>
+</head>
+</html>
