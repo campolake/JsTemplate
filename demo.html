@@ -4,6 +4,7 @@
 
 (function($)
 {
+  //为什么此处是必须在prototype上扩展呢，直接在Function中扩展是报错的。
   Function.prototype.miniExtend = function(parent,override)
 	{
 		if (typeof parent == 'function')
@@ -13,7 +14,7 @@
 		this.prototype = parent; //继承父类
 	};
 	
-	$.miui = {
+	$.mini = {
 		version:'1.9.1',
 		say:function()
 		{
@@ -42,7 +43,7 @@ bb.miniExtend(aa,false);
 console.log(bb);
 
 var ccc = '1.99'
-var cc  = miui.btest(ccc);
+var cc  = mini.btest(ccc);
 console.log(cc);
 
 
