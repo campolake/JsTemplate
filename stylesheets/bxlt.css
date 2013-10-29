@@ -6,6 +6,25 @@ body {
     font-size: 13px;
 }
 
+.bxLayout {
+    width:100%; 
+}
+
+    .bxLayout > .top { 
+        margin-left:2px;
+        margin-right:2px;
+        border:1px solid #95B8E7; 
+        height:80px;
+    }
+
+    .bxLayout > .Left {
+         border:1px solid #95B8E7; 
+         width:180px;
+    }
+
+    .bxLayout > .Right {
+        border:1px solid #95B8E7;  
+    }
 
 .bxDialog {
     z-index: 99999999999; 
@@ -36,263 +55,4 @@ body {
     top:5px; 
     cursor:pointer;
 }
-
-header {
-  
-    background-color:white;
-    color:#2C61A3; 
-    font-size:12pt;
-    font-weight:800;
-}
  
- 
-
-
-/*首页的样式*/
-
-
-/***/
-
-.editform {
-    margin-top:2px;  
-    border:solid 1px #95B8E7;
-    border-collapse:collapse;
-    width:100%;
-
-}
-.editform td{
-    height:28px;
-}
-
-.table-container {
-    overflow:auto;
-    margin:0 0 0 0px;
-    position:static; 
-    overflow:hidden;
-}
-
-.tabContent {     
-    overflow:hidden;
-    padding: 10px 5px;
-}
-
-
-
-/*UItable*/
-   .uiTable {
-        border-bottom: medium none;
-        border-left: 1px solid #E9EEF0;
-        border-top: 1px solid #E9EEF0;
-        border-right:1px solid #E9EEF0;
-        margin-top:5px;        
-        width:100%;  
-        margin:0px auto; 
- 
-    }
-
-.center {
-        margin-left:auto;
-        margin-right:auto; 
-        text-align:center;
-}
-
-table {
-   border-collapse: collapse;
-}
-    
-.table-header {
-    font-size:11pt;
-    color:white;
-    font-weight:bold;
-    text-align:center;
-    background-color:#7DA2CF;
-    height:35px;
-    vertical-align:middle;
-}
-.uiTable tr {
-    height:33px;
-}
-   .uiTable .evenrow td {
-		background:#f9fafa;
-       
-		}
-		
-	.uiTable .oddrow td {
-		background:#f7f8f9;
-		}
-
-.uiTable th {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background: url("../img/th_blue/table/header-bg.gif") repeat scroll 0 0 transparent;
-    border-color: #FFFFFF -moz-use-text-color #FFFFFF #FFFFFF;
-    border-image: none;
-    border-style: solid none solid solid;
-    border-width: 1px medium 1px 1px;
-    color: #2B1E03;
-    text-align: left;
-}
-.uiTable th h3 {
-    font-size: 10px;
-    padding: 6px 8px 8px;
-}
-.uiTable td {
-    border-bottom: 1px solid #E9EEF0;
-    border-right: 1px solid #E9EEF0; 
-    padding: 4px 6px 6px;
-}
-
-.uiTable a {
-    text-decoration:none;
-}
-/*search bar*/
-
- 
- 
-.rightalign {
- text-align:right; 
-}
-
-.form-table table{
-    border-bottom: medium none;
-    border-left: 1px solid #E9EEF0;
-    border-top: 1px solid #E9EEF0;
-    border-right: 1px solid #E9EEF0;
-    margin: 10px auto auto 2px;
-    width: 100%;
-    font-size: 14px;
-	line-height: 22px;
-}
-
-.form-table th h3 {
-    font-size: 10px;
-    padding: 6px 8px 8px;
-}
-.form-table td {
-    border-bottom: 1px solid #E9EEF0;
-    border-right: 1px solid #E9EEF0;
-    color: #4C748C;
-    padding: 4px 6px 6px;
-}
-.form-table input[type="text"] select {
-	 
-	height: 16px; 
-    margin-top:3px;
-    width:200px;
-	padding: 0;
-    border: 1px solid #BABABA;
-	float: left;  
-	margin-right: 10px;
-	padding: 4px 9px;
-}
-
-
-.buttonbar {
-bottom:45px;
-text-align:right;
-float:right;
-position:fixed;
-width:100%;
-}
-
-.inner-form {
-    float:left;
-}
-
-.inner-form fieldset {
-	margin-bottom: 5px;
-}
-
-.inner-form legend {
-	border-bottom: 2px solid #0078B1;
-	color: #0078B1;
-	font-size: 16px;
-	width: 100%;
-  
-}
-
-.inner-form  input[type="checkbox"]{
-    
-    margin-top:5px;
-    position:relative;
-}
-.table4col td {
-    width:25%;
-}
-
-
-.datetimepicker {
-    
-}
-
-.label {
-    text-align:right; 
-    margin-right:20px;
-}
-
-.columnspan  input  {
-    width:75%;
-}
-
-.columnspan  textarea   {
-    width:75%;
-}
-
-.attach {
-    clear:both;
-}
-
-    .attach li {
-    float:left;
-    width:160px;
-    padding:5px 5px 5px 5px;
-    }
-
-
-
- 
-
-/*fieldset*/
-
-fieldset {
-    border:0px;
-
-}
-    fieldset legend {
-        border-bottom: 3px solid #0078B1;
-	  
-	   
-	    width: 100%;
-        font-family:微软雅黑,Tahoma,Arial,Helvetica,sans-serif,SimSun;
-        font-size: 11pt;
-        padding-left:10px;
-        margin-left:10px;
-        color:#3a6cab;
-        border:0px;
-    }
-
-.inner-table {
-    border-collapse:collapse;
-     border-bottom: medium none;
-        border-left: 1px solid #E9EEF0;
-        border-top: 1px solid #E9EEF0;
-        border-right:1px solid #E9EEF0;
-}
-
-    .inner-table  .headertable {
-        font-size:11pt;       
-        text-align:center;        
-        height:32px;
-        vertical-align:middle;
-    }
-    .inner-table td {
-        border-bottom: 1px solid #E9EEF0;
-        border-right: 1px solid #E9EEF0;
-        text-align:center;
-    }
-    .inner-table input {
-        width:160px;
-       text-align:center;
-    }
